@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Image_Grid::manager" title="Grid Manager" module="Image_Grid" sortOrder="10" resource="Image_Grid::manager" />
+        <add id="Image_Grid::add_row" title="Image Grid" module="Image_Grid" sortOrder="20" parent="Image_Grid::manager" action="grid/grid" resource="Image_Grid::add_row"/>
+        <add id="Image_Grid::add_post" title="Image Post" module="Image_Grid" sortOrder="30" parent="Image_Grid::manager" action="grid/post" resource="Image_Grid::add_post"/>
+    </menu>
+</config>
